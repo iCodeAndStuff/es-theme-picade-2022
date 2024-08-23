@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-theme name:     PiCade
-author:         Anthony
+theme name:     PiCade 2022
+author:         Anthony. Revised for 2022 edition by CodeAndStuff. 
 license:        creative commons CC-BY-NC-SA
 -->
 <theme>
@@ -30,17 +30,17 @@ license:        creative commons CC-BY-NC-SA
             <origin>0.5 0</origin>
             <path>./_inc/images/border.png</path>
             <size>0.29296875 0.005208333333333</size>
-            <pos>0.5 0.1953125</pos>
+            <pos>0.5 .6</pos>
          </image>
          <carousel name="systemcarousel">
             <origin>0.5 0.5</origin>
             <pos>0.5 0.45</pos>
-            <type>horizontal</type>
+            <type>vertical</type>
             <color>00000000</color>
-            <size>0.8 0.8</size>
+            <size>2 5</size>
             <logoScale>1</logoScale>
-            <logoSize>0.6 0.6</logoSize>
-            <maxLogoCount>1</maxLogoCount>
+            <logoSize>0.40 0.40</logoSize>
+            <maxLogoCount>3</maxLogoCount>
          </carousel>
          <text name="systemInfo">
             <origin>0.5 1</origin>
@@ -55,15 +55,15 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="basic,detailed,video">
       <image name="logo">
-         <origin>0.5 0</origin>
-         <maxSize>0.1953125 0.078125</maxSize>
-         <pos>0.5 0.078125</pos>
+         <origin>0 1</origin>
+         <maxSize>0.1753125 0.078125</maxSize>
+         <pos>0.048828125 0.178125</pos>
       </image>
       <image name="border" extra="true">
-         <origin>0.5 0</origin>
          <path>./_inc/images/border.png</path>
-         <size>0.29296875 0.005208333333333</size>
-         <pos>0.5 0.1953125</pos>
+         <origin>0 0</origin>
+         <pos>0.048828125 0.1953125</pos>
+         <zIndex>500</zIndex>
       </image>
       <textlist name="gamelist">
          <pos>0.125 0.240885416666667</pos>
@@ -73,45 +73,70 @@ license:        creative commons CC-BY-NC-SA
          <primaryColor>CCCCCC</primaryColor>
          <secondaryColor>CCCCCC</secondaryColor>
          <fontPath>./_inc/fonts/WorkSans-Bold.ttf</fontPath>
-         <forceUppercase>1</forceUppercase>
-         <fontSize>0.048</fontSize>
+         <forceUppercase>0</forceUppercase>
+         <fontSize>0.035</fontSize>
          <alignment>center</alignment>
          <lineSpacing>1.5</lineSpacing>
-         <zIndex>200</zIndex>
+         <zIndex>400</zIndex>
       </textlist>
    </view>
 
    <view name="detailed,video">
-      <image name="logo">
-         <origin>0 0</origin>
-         <pos>0.048828125 0.078125</pos>
-      </image>
-      <image name="border" extra="true">
-         <origin>0 0</origin>
-         <pos>0.048828125 0.1953125</pos>
-      </image>
-      <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_description">
+      <!-- <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,,md_lbl_releasedate,md_lbl_genre,md_genre,md_description">
          <pos>1 1</pos>
-      </text>
+      </text> -->
       <datetime name="md_lastplayed,md_releasedate">
          <pos>1 1</pos>
       </datetime>
       <rating name="md_rating">
          <pos>1 1</pos>
       </rating>
-      <image name="md_image">
+
+
+      <text name="md_lbl_players, md_lbl_genre">
          <origin>0 0</origin>
-         <pos>0.634765625 0</pos>
-         <zIndex>0</zIndex>
-         <size>0 1</size>
+         <pos>0.62 0.61</pos>
+         <color>E6C160</color>
+         <fontPath>./_inc/fonts/WorkSans-Regular.ttf</fontPath>
+         <fontSize>0.02</fontSize>
+      </text>
+
+       <text name="md_players, md_genre">
+         <color>FFFFFF</color>
+         <fontSize>0.02</fontSize>
+      </text>
+
+      <text name="md_lbl_genre">
+         <pos>0.75 0.61</pos>
+      </text>
+
+
+      <text name="md_description">
+         <origin>0 0</origin>
+         <pos>0.62 0.67</pos>
+         <size>0.33 .30</size>
+         <fontSize>0.02</fontSize>
+         <color>FFFFFF</color>
+         <fontPath>./_inc/fonts/WorkSans-Regular.ttf</fontPath>
+         <lineSpacing>1.5</lineSpacing>
+      </text>
+      
+
+      <image name="md_image">
+         <origin>0 1</origin>
+         <pos>0.62 0.60</pos>
+         <zIndex>450</zIndex>
+         <size>0.3 0</size>
       </image>
+
       <image name="gamelist-fade" extra="true">
          <origin>0 0</origin>
          <path>./_inc/images/gamelist-fade.png</path>
-         <size>0.09765625 1</size>
-         <pos>0.537109375 0</pos>
+         <size>1 0</size>
+         <pos>0 .16</pos>
          <zIndex>300</zIndex>
       </image>
+      
       <textlist name="gamelist">
          <pos>0.048828125 0.240885416666667</pos>
          <size>0.546875 0.7</size>
@@ -119,7 +144,7 @@ license:        creative commons CC-BY-NC-SA
       </textlist>
    </view>
 
-   <view name="video">
+   <!-- <view name="video">
       <image name="md_marquee">
          <origin>0 0</origin>
          <pos>1 1</pos>
@@ -135,6 +160,6 @@ license:        creative commons CC-BY-NC-SA
          <maxSize>1 1</maxSize>
          <showSnapshotNoVideo>false</showSnapshotNoVideo>
       </video>
-   </view>
+   </view> -->
 
 </theme>

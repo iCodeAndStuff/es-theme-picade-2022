@@ -74,7 +74,7 @@ license:        creative commons CC-BY-NC-SA
          <secondaryColor>CCCCCC</secondaryColor>
          <fontPath>./_inc/fonts/WorkSans-Bold.ttf</fontPath>
          <forceUppercase>0</forceUppercase>
-         <fontSize>0.035</fontSize>
+         <fontSize>0.03</fontSize>
          <alignment>center</alignment>
          <lineSpacing>1.5</lineSpacing>
          <zIndex>400</zIndex>
@@ -85,14 +85,14 @@ license:        creative commons CC-BY-NC-SA
       <!-- <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,,md_lbl_releasedate,md_lbl_genre,md_genre,md_description">
          <pos>1 1</pos>
       </text> -->
-      <datetime name="md_lastplayed,md_releasedate">
+      <datetime name="md_lastplayed">
          <pos>1 1</pos>
       </datetime>
       <rating name="md_rating">
          <pos>1 1</pos>
       </rating>
 
-
+      <!-- first row of details -->
       <text name="md_lbl_players, md_lbl_genre">
          <origin>0 0</origin>
          <pos>0.62 0.61</pos>
@@ -101,16 +101,33 @@ license:        creative commons CC-BY-NC-SA
          <fontSize>0.02</fontSize>
       </text>
 
-       <text name="md_players, md_genre">
-         <color>FFFFFF</color>
-         <fontSize>0.02</fontSize>
-      </text>
-
       <text name="md_lbl_genre">
          <pos>0.75 0.61</pos>
       </text>
 
 
+       <text name="md_players, md_genre">
+         <color>FFFFFF</color>
+         <fontSize>0.02</fontSize>
+      </text>
+
+  
+      <!-- sec row of details -->
+      <text name="md_lbl_releasedate">
+         <origin>0 0</origin>
+         <pos>0.62 0.635</pos>
+         <color>E6C160</color>
+         <fontPath>./_inc/fonts/WorkSans-Regular.ttf</fontPath>
+         <fontSize>0.02</fontSize>
+      </text>
+
+      <datetime name="md_releasedate">
+         <color>FFFFFF</color>
+         <fontSize>0.02</fontSize>
+      </datetime>
+
+
+      <!-- Desc -->
       <text name="md_description">
          <origin>0 0</origin>
          <pos>0.62 0.67</pos>

@@ -81,6 +81,34 @@ license:        creative commons CC-BY-NC-SA
       </textlist>
    </view>
 
+   <feature supported="video">
+      <view name="video">
+         <image name="md_marquee">
+            <origin>0 1</origin>
+            <maxSize>0.38 .2</maxSize>
+            <pos>0.62 0.2</pos>
+         </image>
+
+         <video name="md_video">
+            <origin>0 1</origin>
+            <pos>0.62 0.6</pos>
+            <zIndex>455</zIndex>
+            <maxSize>.38 .38</maxSize>
+            <delay>.70</delay>
+            <showSnapshotNoVideo>true</showSnapshotNoVideo>
+            <showSnapshotDelay>true</showSnapshotDelay>
+         </video>
+
+         <image name="md_image">
+            <pos>10 10</pos>
+         </image>
+      </view>
+
+      
+
+
+   </feature>
+
    <view name="detailed,video">
       <!-- <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,,md_lbl_releasedate,md_lbl_genre,md_genre,md_description">
          <pos>1 1</pos>
@@ -143,7 +171,7 @@ license:        creative commons CC-BY-NC-SA
          <origin>0 1</origin>
          <pos>0.62 0.60</pos>
          <zIndex>450</zIndex>
-         <size>0.3 0</size>
+         <maxSize>.37 .38</maxSize>
       </image>
 
       <image name="gamelist-fade" extra="true">
@@ -160,23 +188,5 @@ license:        creative commons CC-BY-NC-SA
          <alignment>left</alignment>
       </textlist>
    </view>
-
-   <!-- <view name="video">
-      <image name="md_marquee">
-         <origin>0 0</origin>
-         <pos>1 1</pos>
-      </image>
-      <image name="md_image">
-         <origin>0 0</origin>
-         <pos>1 1</pos>
-      </image>
-      <video name="md_video">
-         <origin>0 0</origin>
-         <pos>0.634765625 0</pos>
-         <zIndex>0</zIndex>
-         <maxSize>1 1</maxSize>
-         <showSnapshotNoVideo>false</showSnapshotNoVideo>
-      </video>
-   </view> -->
 
 </theme>
